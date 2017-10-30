@@ -1,0 +1,24 @@
+#debug: true
+
+server:
+  port: 9999
+
+
+
+app:
+  name: SpringBootStarterDemo
+  description: ${app.name} is a Spring boot Application
+  first_name: underlineName
+  first-name: stripingLineName
+
+prefix:
+  multiLines1:
+    - a
+    - b
+  multiLines2: a,b
+  poolSize: 10
+  executorPool:
+    corePoolSize: 10
+    maxPoolSize: 100
+    queueSize: 500
+
