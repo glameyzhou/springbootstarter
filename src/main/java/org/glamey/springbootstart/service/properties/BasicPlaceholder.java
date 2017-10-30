@@ -1,6 +1,8 @@
-package org.glamey.springbootstart.service;
+package org.glamey.springbootstart.service.properties;
 
 import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -9,7 +11,9 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Getter
-public class PlaceholderProperties {
+@Setter
+@ToString
+public class BasicPlaceholder {
 
   @Value("${app.name}")
   private String appName;

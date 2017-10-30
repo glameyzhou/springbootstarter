@@ -14,23 +14,33 @@ app:
   first_name: underlineName
   first-name: stripingLineName
 
-prefix:
+propertiesPrefix:
   multiLines1:
     - a
     - b
   multiLines2: a,b
-  poolSize: 10
+  map1:
+    key1: value1
+    key2: vaue2
+
   executorPool:
     corePoolSize: 10
     maxPoolSize: 100
     queueSize: 500
 
 
+beanPlaceHolder:
+  name: 张三
+  email: zhangsan@glamey.org
+  address:
+    detail: 北京市大兴区黄村
+    postCode: 100086
+
 ## log confi
 logging:
   level:
     root: info
-    org.springframework.web: debug
+    org.springframework.web: info
     org.hibernate: debug
-  file: /Users/zhouyangzhou/work/temp/springbootstarter/spring.log
+  file: /Users/zhouyangzhou/work/temp/springbootstarter/springbootstarter.log
 
