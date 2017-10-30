@@ -1,10 +1,13 @@
 #debug: true
 
+
+## configuration of server info
 server:
   port: 9999
 
 
 
+## properties configuration
 app:
   name: SpringBootStarterDemo
   description: ${app.name} is a Spring boot Application
@@ -21,4 +24,13 @@ prefix:
     corePoolSize: 10
     maxPoolSize: 100
     queueSize: 500
+
+
+## log confi
+logging:
+  level:
+    root: info
+    org.springframework.web: debug
+    org.hibernate: debug
+  file: /Users/zhouyangzhou/work/temp/springbootstarter/spring.log
 
