@@ -36,7 +36,7 @@ beanPlaceHolder:
     detail: 北京市大兴区黄村
     postCode: 100086
 
-## log confi
+## log config
 logging:
   level:
     root: info

@@ -5,7 +5,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -32,12 +31,15 @@ public class SpringbootstartApplication {
     //屏蔽命令行中的参数
     //application.setAddCommandLineProperties(false);
 
+    application.run(args);
 
+    /*
     ConfigurableApplicationContext context = application.run(args);
-
     //exit
     int exit = SpringApplication.exit(context);
     log.info("spring boot exit code is {}", exit);
+
+    */
   }
 
   class ExitCodeApplication {
